@@ -1,0 +1,25 @@
+/* logo style  */
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+/* center navigation styling  */
+.navbar-nav .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav  .nav-link:hover{
+    color: blue;
+}
+
+/* contact number styling  */
+.contact-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+}
+
