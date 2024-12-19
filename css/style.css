@@ -23,3 +23,157 @@
     color: blue;
 }
 
+
+/* hero section starts */
+.hero {
+    height: 90vh;
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero .profile-image img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    object-fit:fill;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInZoom 1.5s forwards;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero .profile-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .btn-outline-light {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero .btn-primary:hover,
+.hero .btn-outline-light:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    
+    .hero{
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    
+    .hero .btn-outline-light {
+        font-size: 1rem;
+    }
+
+    .hero .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/* about us section  */
+.profile-image-about img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgb(2, 2, 2);
+    object-fit:fill;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0.2;
+    animation: fadeInZoom1 1.5s forwards;
+}
+
+@keyframes fadeInZoom1 {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero .profile-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* social media icon  */
+.social-media-icon{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.linkdin {
+    color: #0A66C2;
+}
+
+.github{
+    color: black;
+}
+
+.envelope{
+    color: red;
+}
+
+.facebook{
+    color: blue;
+}
+
+.whatsapp{
+    color: #0ad630;
+}
