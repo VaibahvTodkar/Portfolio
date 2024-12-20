@@ -243,3 +243,110 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+/* eduction section timeline  */
+
+/* .eduction-section{
+    background: linear-gradient(120deg, #d5a3eb, #6e5a8f);
+    color: white;
+
+} */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #dee2e6;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    width: calc(50% - 2rem);
+    padding: 1.5rem;
+    /* background: linear-gradient(135deg, #f8f9fa, #e9ecef); */
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+    color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.timeline-item.left {
+    left: 27px;
+}
+.timeline-item.right {
+    left: 50%;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    width: 15px;
+    height: 15px;
+    background-color: #0d6efd;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.timeline-item.left::before {
+    right: -9px;
+}
+.timeline-item.right::before {
+    left: -9px;
+}
+.timeline-item h5 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+.timeline-item p {
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+.timeline-item .details {
+    font-style: italic;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 8px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .timeline-item.left, .timeline-item.right {
+        left: 0;
+    }
+    .timeline-item::before {
+        left: 0;
+    }
+}
+/* Enhanced Bootstrap Styling */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.timeline-item .badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: #198754;
+    color: white;
+    border-radius: 50px;
+}
+.timeline-item:hover .badge {
+    background-color: #0d6efd;
+}
