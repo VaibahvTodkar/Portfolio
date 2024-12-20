@@ -25,6 +25,13 @@
 
 
 /* hero section starts */
+
+/* h1 .text-gradient {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
 .hero {
     height: 90vh;
     background: linear-gradient(120deg, #9b0ed7, #5213ba);
@@ -116,8 +123,8 @@
     }
 
     .hero .profile-image img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -176,4 +183,63 @@
 
 .whatsapp{
     color: #0ad630;
+}
+
+.btn-color{
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+    color: white;
+    
+}
+
+.btn-color:hover{
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* about section right side  */
+.about-section li {
+    list-style: none;
+    padding: 0;
+}
+.about-section ul li {
+    margin-bottom: 10px;
+}
+.about-section ul li span {
+    font-weight: bold;
+}
+
+/* skills section  */
+.category-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+.category-card:hover {
+    transform: scale(1.05);
+    background-color: #f0f8ff;
+    color: #0056b3;
+}
+.language-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* background-color: #f8f9fa; */
+    background: linear-gradient(93deg, #d8cddc00, #a68fcb4f);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.language-card:hover {
+    transform: scale(1.1);
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+    color: white;
+    cursor: pointer;
+}
+.language-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.language-name {
+    font-size: 18px;
+    font-weight: bold;
 }
