@@ -350,3 +350,105 @@
 .timeline-item:hover .badge {
     background-color: #0d6efd;
 }
+
+
+/* project section css  */
+.project-section {
+    background-color: white;
+    color: black; /* White text */
+    padding: 50px 20px;
+}
+.project-card {
+    background-color: #a5a0f8; /* Dark background for cards */
+    border: none;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+}
+.project-img {
+    height: 200px;
+    object-fit: cover;
+}
+.btn-color {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+}
+.btn-color:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+
+
+
+/* contact form css  */
+.contact-section {
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+    color: #fff; /* White text */
+    padding: 40px 20px;
+}
+.contact-form input,
+.contact-form textarea {
+    background-color: #e4e6f5; /* Dark input background */
+    color: #fff; /* White text */
+    border: 1px solid #555; /* Border for inputs */
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa; /* Light gray placeholders */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-color-contact {
+    background-color: #fcfcfc; /* Blue button background */
+    color:black; 
+    border: none;
+}
+.btn-color:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+}
+
+
+  /* socal media icon  */
+  .footer {
+    /* background-color: #000; Black background */
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+
+    color: #fff; /* White text */
+    padding: 20px 0;
+}
+.footer .footer-top {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333; /* Separator line */
+}
+.footer .footer-about .fot-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer .social-icon a {
+    color: #ffffff; /* White icons */
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.footer .social-icon a i {
+    font-size: 35px;
+}
+.footer .social-icon a:hover {
+    color: #007bff; /* Change to blue on hover */
+}
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bbbcbb; /* Light gray text */
+}
+  
