@@ -15,14 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "todkar2711@gmail.com"; // Your email address
     $subject = "New Contact Form Submission";
     $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers = "Reply-To: $email\r\n";
+    $headers = "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Email body
     $emailBody = "You have received a new message from the contact form:\n\n";
-    $emailBody .= "Name: $name\n";
-    $emailBody .= "Email: $email\n\n";
-    $emailBody .= "Message:\n$message\n";
+    $emailBody = "Name: $name\n";
+    $emailBody = "Email: $email\n\n";
+    $emailBody = "Message:\n$message\n";
 
     // Send email
     if (mail($to, $subject, $emailBody, $headers)) {
