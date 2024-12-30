@@ -1,4 +1,5 @@
 /* logo style  */
+
 .logo{
     width: 40px;
     height: 40px;
@@ -7,6 +8,7 @@
 /* center navigation styling  */
 .navbar-nav .nav-link{
     font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     color: black;
     transition: color 0.3s ease;
@@ -94,6 +96,8 @@
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
+
 }
 
 .hero .btn-primary {
@@ -227,39 +231,127 @@
     font-weight: bold;
 }
 
+
+.about-section p{
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+
 /* skills section  */
-.category-card {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-align: center;
+
+
+
+
+
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.9px;
 }
-.category-card:hover {
-    transform: scale(1.05);
-    background-color: #f0f8ff;
-    color: #0056b3;
+
+/* Section Intro Paragraph */
+.section-intro p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
 }
-.language-card {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    /* background-color: #f8f9fa; */
-    background: linear-gradient(93deg, #d8cddc00, #a68fcb4f);
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+/* Row for Items */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 5px;
 }
-.language-card:hover {
-    transform: scale(1.1);
-    background: linear-gradient(120deg, #9b0ed7, #5213ba);
-    color: white;
-    cursor: pointer;
-}
-.language-icon {
-    font-size: 50px;
+
+/* Individual Item */
+.item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 5px;
     margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
-.language-name {
-    font-size: 18px;
-    font-weight: bold;
+
+/* Item Hover Effect */
+.item:hover {
+    transform: translateY(-5px);
 }
+
+/* Item Inner Container */
+.item-inner {
+    padding: 5px;
+}
+
+/* Item Icons */
+.item-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.item-icon img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Item Title */
+.item-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Item Description */
+.item-desc {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .item {
+        width: 48%; /* Two items per row on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .item {
+        width: 22%; /* Four items per row on large screens */
+    }
+}
+
+/* Section Background and Padding */
+.overview-section {
+    background-color: #e3ebfa;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Padding Adjustments for Larger Screens */
+@media (min-width: 1200px) {
+    .overview-section {
+        padding: 60px 0;
+    }
+}
+
 
 /* eduction section timeline  */
 
