@@ -19,12 +19,15 @@
 }
 
 /* contact number styling  */
-.contact-number {
+.contact-number a {
     font-size: 16px;
     font-weight: bold;
     color: blue;
 }
 
+.contact-number a  {
+    text-decoration: none;
+}
 
 /* scrolling animation */
 .navbar-collapse {
@@ -52,7 +55,7 @@
 } */
 
 .hero {
-    height: 90vh;
+    height: 95vh;
     background: linear-gradient(120deg, #9b0ed7, #5213ba);
     color: rgb(255, 255, 255);
     text-align: center;
@@ -128,7 +131,7 @@
 @media (max-width: 768px) {
     
     .hero{
-        height: 100vh;
+        height: 95vh;
     }
     .hero h1 {
         font-size: 2rem;
@@ -482,12 +485,14 @@
     object-fit: cover;
 }
 .btn-color {
-    background-color: #007bff; /* Blue button */
+    background: linear-gradient(120deg, #9b0ed7, #5213ba);
+ /* Blue button */
     color: #fff;
     border: none;
 }
 .btn-color:hover {
-    background-color: #0056b3; /* Darker blue */
+    background-color: #ffffff;
+    color: black; /* Darker blue */
 }
 
 
@@ -520,8 +525,8 @@
     color:black; 
     border: none;
 }
-.btn-color:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+.btn-color-contact:hover {
+    background-color: rgb(169, 235, 169); /* Darker blue on hover */
     color: #fff;
 }
 
