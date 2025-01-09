@@ -496,11 +496,11 @@
 
 
     <div class="bottom-nav">
-        <a href="#" class="nav-item d-flex-col">
+        <a href="#" id="bottom-i-color" class="nav-item ">
             <i class="bi bi-house-fill"></i>
             <span>Home</span>
         </a>
-        <a href="#about_me_id" class="nav-item">
+        <a href="#about_me_id"  class="nav-item">
             <i class="bi bi-person-fill"></i>
             <span>About</span>
         </a>
@@ -515,18 +515,13 @@
     </div>
 
     <script>
-        // JavaScript to handle active tab
-        const navItems = document.querySelectorAll('.nav-item');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                // Remove 'active' class from all nav items
-                navItems.forEach(nav => nav.classList.remove('active'));
-                // Add 'active' class to the clicked nav item
-                item.classList.add('active');
-            });
-        });
+        var a = document.querySelector("#botton-i-color")
+        a.addEventListener("click", () => {
+            document.querySelector("#botton-i-color").style.backgroundColor="green";
+        } ) ;
     </script>
+
+   
 
     <script>
         // Close navbar after clicking a link with smooth animation
